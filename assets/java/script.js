@@ -41,6 +41,7 @@ function showProjects() {
         a.href = project.link;
         a.className = "portfolio-card";
         a.setAttribute('data-category', project.category);
+        a.setAttribute('target', '_blank');
 
         a.innerHTML = `
           <div class="project-img">
