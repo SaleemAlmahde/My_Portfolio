@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorBox - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+     <!-- Header section -->
+
+    <header id="headerSection">
+        <div class="container">
+            <img src="assets/imgs/dots.jpg" class="dots1">
+            <img src="assets/imgs/dots.jpg" class="dots2">
+            <nav class="header-nav">
+                <span>Portfolio</span>
+                <ul class="nav-menu">
+                    <li><a href="index.html#aboutSection" class="">About</a></li>
+                    <li><a href="index.html#portfolioSection">Portfolio</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                    <li><button type="submit">Get Started</button></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <div class="header-info">
+                    <span>Project</span>
+                    <h2>FlavorBox</h2>
+                    <p><strong>FlavorBox</strong> is a clean and simple <span>recipe website</span> designed to help users discover, view and add recipes easily. The focus was on usability, responsive layout and a pleasant browsing experience.</p>
+                    <div class="header-menu">
+                      <p>Find Me On</p>
+                      <ul>
+                        <li><a href="https://www.facebook.com/slym.almhdy.193474"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/saleem_almahde?igsh=MXg0bGQMWp5aTE4aA=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/saleem-almahde-391a63279/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      </ul>
+          
+                    </div>
+                    <button type="submit" class="btn-visit">Download Files</button>
+                    <button type="button" onclick="window.location.href='index.html#portfolioSection'">View Projects</button>
+                </div>
+                <div class="header-img">
+                    <img class="img1" src="assets/imgs/photo_2025-10-16_18-15-37-Photoroom.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="aboutSection">
+        <div class="container">
+            <div class="about-content">
+                <h2>About FlavorBox</h2>
+                <p><strong>FlavorBox</strong> is a small web application for sharing and managing recipes. Users can browse recipes, view details, and add new recipes that are stored locally in the browser. The project emphasizes clean UI, straightforward UX flows, and responsive design.</p>
+                <ul>
+                  <li><strong>Type:</strong> Web Application (Recipes)</li>
+                  <li><strong>Tools:</strong> HTML, CSS, JavaScript, localStorage</li>
+                  <li><strong>Year:</strong> 2025</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="assets/imgs/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+        <section id="portfolioSection">
+        <div class="container">
+          <nav class="portfolio-nav"> 
+            <div class="portfolio-top-section">
+              <div class="portfolio-section-title">
+                <h2>Project Preview</h2>
+              </div>
+          </nav>
+  <div class="project">
+   <a href="projrct1.html" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Screenshot 2025-10-18 163014.png" alt="">
+    </div>
+  </a>
+  <a href="" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Frame 45.png" alt="">
+    </div>
+  </a>
+  <a href="" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Frame 45 (1).png" alt="">
+    </div>
+  </a>
+  <a href="" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Frame 45 (3).png" alt="">
+    </div>
+  </a>
+  <a href="" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Frame 45 (4).png" alt="">
+    </div>
+  </a>
+  <a href="" class="portfolio-card">
+    <div class="project-img">
+      <img src="assets/imgs/Frame 45 (5).png" alt="">
+    </div>
+  </a>
+  </div>
+        </div>
+      </section>
+
+<section id="problems-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Problems & Solutions</h2>
+      <p>Challenges faced while building FlavorBox and how they were solved.</p>
+    </div>
+
+    <div class="problems-content">
+      <div class="problem-item">
+        <h3>1. Uneven card heights in the grid</h3>
+        <p><strong>Problem:</strong> Recipe cards had different heights due to varying description lengths.</p>
+        <p><strong>Solution:</strong> Applied flexbox/grid with fixed image heights and text truncation to keep cards uniform.</p>
+      </div>
+
+      <div class="problem-item">
+        <h3>2. Lost user recipes after refresh</h3>
+        <p><strong>Problem:</strong> Recipes added by the user disappeared when the page reloaded.</p>
+        <p><strong>Solution:</strong> Implemented <code>localStorage</code>-based saving so recipes persist between sessions.</p>
+      </div>
+
+      <div class="problem-item">
+        <h3>3. Responsive image cropping</h3>
+        <p><strong>Problem:</strong> Images were being cropped oddly across different screen sizes.</p>
+        <p><strong>Solution:</strong> Used <code>object-fit: cover;</code> and consistent aspect ratios for all recipe thumbnails.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="project-links">
+  <div class="container">
+    <button onclick="window.open('https://github.com/SaleemAlmahde/cook')">View Code</button>
+    <button onclick="window.open('https://saleemalmahde.github.io/cook/')">Watch Demo</button>
+    <button onclick="window.location.href='index.html#portfolioSection'">Back to Projects</button>
+  </div>
+</section>
+
+      <footer>
+  <div class="container">
+    <div class="footer-title">
+      <div class="nav-footer">
+        <h2>Saleem Almahde</h2>
+      </div>
+
+      <div class="footer-content">
+        <span>About&nbsp;</span>
+        <span class="Portfolio-line">&nbsp;Portfolio&nbsp;</span>
+        <span>&nbsp;Contact</span> 
+        <p><br></p>
+        <p>Email: <a href="mailto:saleem@example.com">almahdesaleem@gmail.com</a></p>
+        <p>Open for collaborations and freelance work.</p>
+        <br>
+      </div>
+
+      <div class="nav-footer-icon">
+        <a href="https://www.linkedin.com/in/saleem-almahde-391a63279/" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/SaleemAlmahde" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:almahdesaleem@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="copyright-section">
+    <div class="container">
+      <p>© 2025 Saleem Almahde. All rights reserved.</p>
+    </div>
+  </section>
+</footer>
+
+</body>
+</html>

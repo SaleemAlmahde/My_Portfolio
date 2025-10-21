@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property in Homs - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header id="headerSection">
+        <div class="container">
+            <img src="assets/imgs/dots.jpg" class="dots1">
+            <img src="assets/imgs/dots.jpg" class="dots2">
+
+            <nav class="header-nav">
+                <span>Portfolio</span>
+                <ul class="nav-menu">
+                    <li><a href="index.html#aboutSection">About</a></li>
+                    <li><a href="index.html#portfolioSection">Portfolio</a></li>
+                    <li><button type="submit">Get Started</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-info">
+                    <span>Project</span>
+                    <h2>Property in Homs</h2>
+                    <p><strong>Property in Homs</strong> is a collaborative real estate application developed using <strong>Flutter</strong>. It focuses on displaying, filtering, and managing real estate listings in <strong>Homs City</strong>. The app connects to a <strong>Back4App API</strong> backend, enabling dynamic data retrieval and synchronization with <strong>Cubit</strong> and <strong>Bloc</strong> for state management.</p>
+
+                    <div class="header-menu">
+                        <p>Find Me On</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/slym.almhdy.193474"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/saleem_almahde?igsh=MXg0bGQMWp5aTE4aA=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/saleem-almahde-391a63279/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <button type="submit" class="btn-visit">Download Files</button>
+                    <button type="button" onclick="window.location.href='index.html#portfolioSection'">View Projects</button>
+                </div>
+
+                <div class="header-img">
+                    <img class="img1" src="assets/imgs/photo_2025-10-16_18-15-37-Photoroom.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="aboutSection">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Property in Homs</h2>
+                <p><strong>Property in Homs</strong> is a modern real estate app that helps users find properties for rent or sale in Homs. It connects to the <strong>Back4App API</strong> to fetch property data dynamically, supports image previews, and allows users to filter listings by price, location, and type. The project emphasizes <strong>API integration</strong>, <strong>clean architecture</strong>, and <strong>team collaboration</strong>.</p>
+                <ul>
+                    <li><strong>Type:</strong> Real Estate Mobile App</li>
+                    <li><strong>Tools:</strong> Flutter, Dart, Cubit, Bloc, Back4App</li>
+                    <li><strong>Year:</strong> 2025</li>
+                    <li><strong>Team Project:</strong> Developed collaboratively by multiple developers</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="assets/imgs/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolioSection">
+        <div class="container">
+            <nav class="portfolio-nav"> 
+                <div class="portfolio-top-section">
+                    <div class="portfolio-section-title">
+                        <h2>Project Preview</h2>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="project">
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (12).png" alt=""></div></a>
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (13).png" alt=""></div></a>
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (14).png" alt=""></div></a>
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (15).png" alt=""></div></a>
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (16).png" alt=""></div></a>
+                <a href="#" class="portfolio-card"><div class="project-img"><img src="assets/imgs/Frame 45 (17).png" alt=""></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems & Solutions -->
+    <section id="problems-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Problems & Solutions</h2>
+                <p>Challenges faced while building the Property in Homs app and how the team solved them.</p>
+            </div>
+
+            <div class="problems-content">
+                <div class="problem-item">
+                    <h3>1. API Integration and Data Handling</h3>
+                    <p><strong>Problem:</strong> Fetching and displaying property data from Back4App while keeping performance stable.</p>
+                    <p><strong>Solution:</strong> Used <code>Dio</code> for API requests and implemented Cubit/Bloc to manage state efficiently.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>2. Filtering and Searching Properties</h3>
+                    <p><strong>Problem:</strong> Implementing dynamic filters (location, type, and price range) caused UI delays.</p>
+                    <p><strong>Solution:</strong> Optimized queries and updated filters with debounced Cubit logic for smoother performance.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>3. Image Loading and Display</h3>
+                    <p><strong>Problem:</strong> Property images loaded slowly and sometimes failed to appear.</p>
+                    <p><strong>Solution:</strong> Added caching and fallback placeholders to ensure stable image display even with weak connections.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>4. Team Collaboration</h3>
+                    <p><strong>Problem:</strong> Merging code and maintaining consistent structure between multiple developers.</p>
+                    <p><strong>Solution:</strong> Followed clean architecture principles and clear folder structure for easier integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Links -->
+    <section id="project-links">
+        <div class="container">
+            <button onclick="window.open('https://github.com/ShamsEE96/property_in_homs')">View Code</button>
+            <!-- <button onclick="window.open('https://saleemalmahde.github.io/cook/')">Watch Demo</button> -->
+            <button onclick="window.location.href='index.html#portfolioSection'">Back to Projects</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-title">
+                <div class="nav-footer">
+                    <h2>Saleem Almahde</h2>
+                </div>
+
+                <div class="footer-content">
+                    <span>About&nbsp;</span>
+                    <span class="Portfolio-line">&nbsp;Portfolio&nbsp;</span>
+                    <span>&nbsp;Contact</span> 
+                    <p><br></p>
+                    <p>Email: <a href="mailto:almahdesaleem@gmail.com">almahdesaleem@gmail.com</a></p>
+                    <p>Open for collaborations and freelance work.</p>
+                    <br>
+                </div>
+
+                <div class="nav-footer-icon">
+                    <a href="https://www.linkedin.com/in/saleem-almahde-391a63279/" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/SaleemAlmahde" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:almahdesaleem@gmail.com">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="copyright-section">
+            <div class="container">
+                <p>© 2025 Saleem Almahde. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
