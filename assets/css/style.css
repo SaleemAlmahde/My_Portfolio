@@ -263,12 +263,21 @@ header nav span{
     background-color: #040221 !important;
 }
 
-#portfolioSection .project{
+/* #portfolioSection .project{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding:100px 0 ;
+} */
+
+#portfolioSection .project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* أو أي مسافة تريدها بين البطاقات */
+    padding: 100px 0;
+    justify-content: flex-start; /* ضع العناصر بداية الصف */
 }
+
 
 #portfolioSection .portfolio-top-section{
     display: flex;
@@ -325,16 +334,26 @@ margin-inline-start: 25px;
 background-color: var(--secondary-color);
 }
 
-#portfolioSection .portfolio-bottom-section li{
+#portfolioSection .portfolio-bottom-section button{
 font-size: 20px;
 margin-inline-end: 35px;
 font-size: 20px;
 font-weight: 100;
+border: none;
+background-color: transparent;
+color: var(--text-color);
 }
 
 #portfolioSection .project a{
     width: 29%;
 }
+
+.portfolio-card {
+    flex: 0 0 calc(33.333% - 20px); /* 3 بطاقات في الصف مع احتساب gap */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
 
 .portfolio-card{
     border-radius: 25px;
